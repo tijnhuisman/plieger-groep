@@ -1,0 +1,410 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+
+<Layout title="Plieger groep">
+  <Header />
+
+  <div
+    class="grid w-full"
+    style="grid-template-columns: [full-width-start] minmax(1rem, 1fr) [content-start] min(900px, calc(100% - 2rem)) [content-end] minmax(1rem, 1fr) [full-width-end]; "
+  >
+    <div
+      id="hero-header"
+      style="grid-column: full-width"
+      class="relative h-96 md:h-[600px] overflow-hidden"
+    >
+      <div
+        id="hero-carousel"
+        class="scroll-smooth absolute left-0 h-full grid grid-cols-[100%_100%_100%] overflow-x-hidden w-full overflow-y-hidden image-container bg-[#050047]"
+      >
+        <div class="h-full">
+          <img
+            class="sm:h-auto h-96 mx-auto object-cover object-center"
+            src="/images/plieger-cafe.webp"
+          />
+        </div>
+
+        <div class="h-full">
+          <img
+            class="sm:h-auto h-96 mx-auto object-cover object-center"
+            src="/images/thermonoord-xperience.webp"
+          />
+        </div>
+        <div class="h-full">
+          <img
+            class="sm:h-auto h-96 mx-auto object-cover object-center"
+            src="/images/badkamer-showroom.webp"
+          />
+        </div>
+      </div>
+
+      <div
+        class="absolute bottom-0 left-1/2 w-full max-w-5xl -translate-x-1/2 px-8 pb-8 md:pb-16 font-bold text-white"
+      >
+        <h1 class="my-2 text-5xl md:text-7xl">Plieger Groep</h1>
+        <h2 class="md:text-2xl">Al meer dan 100 jaar een begrip</h2>
+      </div>
+    </div>
+
+    <article
+      class="mx-auto mt-4 lg:mt-16 max-w-[800px] p-4"
+      style="grid-column: content"
+    >
+      <h2 class="my-4 text-3xl font-bold text-[#050047]">
+        Welkom bij Plieger groep
+      </h2>
+      <p>
+        Plieger Groep is gespecialiseerd in sanitair, verwarming, installatie,
+        lucht & ventilatie, elektra en in Nederland de grootste partij in
+        sanitair. Met een centraal distributiecentrum en hoofdkantoor in
+        Zaltbommel, 67 Expressen en 20 Showrooms, leveren wij een assortiment
+        van meer dan 150.000 artikelen aan o.a. installateurs, loodgieters en
+        detaillisten.
+      </p>
+    </article>
+
+    <div
+      style="grid-column: full-width"
+      class="relative flex gap-8 flex-row align-center px-8 md:justify-center py-4 pt-8 lg:py-16 w-full overflow-scroll"
+    >
+      <div class="flex w-32 text-center flex-col shrink-0 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#050047"
+          class="w-10 h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M12 8.25v-1.5m0 1.5c-1.355 0-2.697.056-4.024.166C6.845 8.51 6 9.473 6 10.608v2.513m6-4.87c1.355 0 2.697.055 4.024.165C17.155 8.51 18 9.473 18 10.608v2.513m-3-4.87v-1.5m-6 1.5v-1.5m12 9.75l-1.5.75a3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0 3.354 3.354 0 00-3 0 3.354 3.354 0 01-3 0L3 16.5m15-3.38a48.474 48.474 0 00-6-.37c-2.032 0-4.034.125-6 .37m12 0c.39.049.777.102 1.163.16 1.07.16 1.837 1.094 1.837 2.175v5.17c0 .62-.504 1.124-1.125 1.124H4.125A1.125 1.125 0 013 20.625v-5.17c0-1.08.768-2.014 1.837-2.174A47.78 47.78 0 016 13.12M12.265 3.11a.375.375 0 11-.53 0L12 2.845l.265.265zm-3 0a.375.375 0 11-.53 0L9 2.845l.265.265zm6 0a.375.375 0 11-.53 0L15 2.845l.265.265z"
+          ></path>
+        </svg>
+
+        <p class="text-[#050047] text-2xl font-bold">105 jaar</p>
+        <p class="text-md">Bestaan</p>
+      </div>
+
+      <div class="flex w-32 text-center flex-col shrink-0 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#050047"
+          class="w-10 h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+          ></path>
+        </svg>
+
+        <p class="text-[#050047] text-2xl font-bold">20.000</p>
+        <p class="text-md">Klanten per week</p>
+      </div>
+
+      <div class="flex w-32 text-center flex-col shrink-0 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#050047"
+          class="w-10 h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"
+          ></path>
+        </svg>
+
+        <p class="text-[#050047] text-2xl font-bold">80+</p>
+        <p class="text-md">Locaties</p>
+      </div>
+
+      <div class="flex w-32 text-center flex-col shrink-0 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#050047"
+          class="w-10 h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+          ></path>
+        </svg>
+
+        <p class="text-[#050047] text-2xl font-bold">1.000+</p>
+        <p class="text-md">Collega's</p>
+      </div>
+
+      <div class="flex w-32 text-center flex-col shrink-0 items-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#050047"
+          class="w-10 h-10"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.568 3H5.25A2.25 2.25 0 003 5.25v4.318c0 .597.237 1.17.659 1.591l9.581 9.581c.699.699 1.78.872 2.607.33a18.095 18.095 0 005.223-5.223c.542-.827.369-1.908-.33-2.607L11.16 3.66A2.25 2.25 0 009.568 3z"
+          ></path>
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M6 6h.008v.008H6V6z"></path>
+        </svg>
+
+        <p class="text-[#050047] text-2xl font-bold">200.000+</p>
+        <p class="text-md">Producten</p>
+      </div>
+    </div>
+
+    <div class="text-[#050047] md:hidden" style="grid-column: content">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="currentColor"
+        class="w-10 h-10 float-right"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3"></path>
+      </svg>
+    </div>
+
+    <div
+      class="my-8 bg-gradient-to-b from-slate-100 to-transparent"
+      style="grid-column: full-width"
+    >
+      <div
+        class="mx-auto max-w-[1200px] lg:grid lg:grid-cols-2 lg:gap-8 lg:py-16 lg:px-8 overflow-hidden"
+      >
+        <img
+          src="/images/harry-plieger.jpeg"
+          alt=""
+          class="w-full object-cover lg:h-96 animate transition duration-500"
+        />
+        <div class="p-4 lg:p-0 animate transition duration-500 lg:delay-100">
+          <h2 class="mb-6 text-4xl font-bold text-[#050047]">Ons verhaal</h2>
+          <p class="">
+            Sinds 1918 heeft Plieger Groep zich ontwikkeld van een
+            familiebedrijf tot dé autoriteit in sanitair, verwarming en
+            installatiematerialen. Onze kernwaarden - kwaliteit, innovatie en
+            klantgerichtheid - leiden onze groei. Of het nu voor particulieren
+            of professionals is, wij bieden hoogwaardige oplossingen die voldoen
+            aan diverse behoeften. Duurzaamheid staat bij ons centraal, met
+            voortdurende investeringen in onderzoek en ontwikkeling. Bij Plieger
+            zijn we meer dan een leverancier, we zijn uw langetermijnpartner.
+          </p>
+          <a
+            href=""
+            class="my-8 block w-fit bg-[#050047] px-5 py-3 text-white hover:opacity-60"
+            >Lees verder</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-[#050047] text-white" style="grid-column: full-width">
+      <div
+        class="mx-auto max-w-[1200px] flex flex-col-reverse lg:grid lg:grid-cols-2 lg:gap-8 lg:py-16 overflow-hidden"
+      >
+        <div class="p-4 lg:p-0 animate transition duration-500 lg:delay-100">
+          <h2 class="mb-6 text-4xl font-bold">Onze activiteiten</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel harum
+            magni commodi a quasi nesciunt voluptatibus aliquid minus neque
+            molestias consequatur, qui ratione laborum, aut asperiores quam
+            laudantium placeat eveniet ab ducimus aperiam iure ut natus.
+            Excepturi animi neque debitis doloribus. Magnam quam ex qui! Iusto,
+            vitae. Fuga, unde modi?
+          </p>
+          <a
+            href=""
+            class="my-8 block w-fit bg-white px-5 py-3 text-[#050047] hover:opacity-60"
+            >Lees verder</a
+          >
+        </div>
+        <img
+          src="/images/ons-verhaal.jpeg"
+          alt=""
+          class="w-full object-cover lg:h-96 animate transition duration-500"
+        />
+      </div>
+    </div>
+
+    <div
+      class="mx-auto max-w-5xl py-16 lg:py-32"
+      style="grid-column: full-width"
+    >
+      <div class="mx-auto max-w-[1200px] px-8 lg:grid lg:grid-cols-2 lg:gap-8">
+        <div class="animate transition duration-500">
+          <h2 class="my-6 text-4xl font-bold text-[#050047]">Onze locaties</h2>
+          <p class="text-2xl">
+            In nederland hebben onze bedrijven ruim <span
+              class="bg-[#050047]/10 font-bold text-[#050047]">70 locaties</span
+            > en meer dan
+            <span class="bg-[#050047]/10 font-bold text-[#050047]"
+              >1.000 medewerkers.</span
+            >
+          </p>
+          <div class="mt-8">
+            <span class="my-2 flex w-fit items-center gap-2 px-2 text-xl">
+              <div class="h-6 w-6 bg-[#0137FF]"></div>
+               Plieger
+            </span>
+
+            <span class="my-2 flex w-fit items-center gap-2 px-2 text-xl">
+              <div class="h-6 w-6 bg-[#DC0128]"></div>
+               ThermoNoord
+            </span>
+            <span class="my-2 flex w-fit items-center gap-2 px-2 text-xl">
+              <div class="h-6 w-6 bg-[#FEE40A]"></div>
+               Memodo
+            </span>
+          </div>
+        </div>
+        <img
+          src="/images/kaart.svg"
+          alt=""
+          class="mx-auto sm:mb-4 -mb-8 -mt-16 sm:mt-4 -z-10 relative animate transition duration-500 lg:delay-100"
+        />
+      </div>
+    </div>
+
+    <div class="bg-[#050047] text-white" style="grid-column: full-width">
+      <div class="mx-auto max-w-[1200px] py-8 lg:py-16 relative">
+        <h2 class="mb-8 lg:mx-8 mx-4 lg:mb-16 text-4xl font-bold">
+          Onze merken
+        </h2>
+
+        <div
+          class="my-8 grid grid-cols-2 gap-4 md:gap-8 md:grid-cols-3 px-4 md:px-8"
+        >
+          <div class="animate transition duration-500">
+            <img src="/images/merken/plieger.jpg" alt="" />
+            <h3 class="my-2 text-2xl font-bold">Plieger</h3>
+            <p class="text-md text-white/60 md:text-lg">
+              De technische groothandel met 150.000 producten met extra kennis
+              en kunde op het gebied van sanitair.
+            </p>
+          </div>
+          <div class="animate transition duration-500">
+            <img src="/images/merken/thermonoord.jpg" alt="" />
+            <h3 class="my-2 text-2xl font-bold">ThermoNoord</h3>
+            <p class="text-md text-white/60 md:text-lg">
+              Gespecialiseerd in warmtetechniek, warmwatertechniek,
+              klimaattechniek en airconditioning.
+            </p>
+          </div>
+          <div class="animate transition duration-500">
+            <img src="/images/merken/memodo.jpg" alt="" />
+            <h3 class="my-2 text-2xl font-bold">Memodo</h3>
+            <p class="text-md text-white/60 md:text-lg">
+              De specialist op het gebied van energy en storage. Denk aan solar
+              en batterijen voor thuis en bedrijf.
+            </p>
+          </div>
+          <div class="animate transition duration-500">
+            <img src="/images/merken/plieger-sanitair.jpg" alt="" />
+            <h3 class="my-2 text-2xl font-bold">Plieger Products</h3>
+            <p class="text-md text-white/60 md:text-lg">
+              Al jaren hét vertrouwde Nederlandse merk met alles voor je
+              badkamer. Productontwikkeling in eigen huis.
+            </p>
+          </div>
+          <div class="animate transition duration-500">
+            <img src="/images/merken/hoomie.jpg" alt="" />
+            <h3 class="my-2 text-2xl font-bold">Hoomie</h3>
+            <p class="text-md text-white/60 md:text-lg">
+              De adviseur voor consumenten en installateurs op het gebied van
+              het installeren van hybride warmtepompen.
+            </p>
+          </div>
+          <div class="animate transition duration-500">
+            <img src="/images/merken/avu.jpg" alt="" />
+            <h3 class="my-2 text-2xl font-bold">AVU</h3>
+            <p class="text-md text-white/60 md:text-lg">
+              De specialist op het gebied van luchtverwarming, vloerverwarming,
+              ventilatie, luchtgordijnen en airconditioning.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="bg-gradient-to-b from-slate-100 to-transparent"
+      style="grid-column: full-width"
+    >
+      <div
+        class="mx-auto max-w-[1200px] lg:grid lg:grid-cols-2 lg:gap-8 lg:py-16 lg:px-8"
+      >
+        <img
+          src="/images/werken-bij-plieger.jpeg"
+          alt=""
+          class="w-full object-cover lg:h-96 animate transition duration-500"
+        />
+        <div class="p-4 lg:p-0 animate transition duration-500 lg:delay-100">
+          <h2 class="mb-6 text-3xl font-bold text-[#050047]">
+            Werken bij Plieger Groep
+          </h2>
+          <p class="mb-4">
+            De Plieger Groep bestaat uit de merken Plieger, Thermonoord, Memodo,
+            Hoomie en AVU. We bestaan inmiddels al meer dan 105 jaar en met
+            circa 750 medewerkers bedienen wij dagelijks onze klanten in
+            Nederland.
+          </p>
+          <p>
+            De Plieger Groep is in een nieuwe fase waarbij we voortbouwen op de
+            successen uit ons verleden, nieuwe kansen pakken én investeren in
+            onze toekomst. Bouw jij mee? Dit is je kans!
+          </p>
+          <a
+            href=""
+            class="my-8 block w-fit bg-[#050047] px-5 py-3 text-white hover:opacity-60"
+            >Solliciteren</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="bg-[#050047] text-white grid lg:grid-cols-[30rem,1fr,1fr,1fr,1fr,1fr] py-16 px-8"
+      style="grid-column: full-width"
+    >
+      <img
+        src="/images/logo-plieger-groep.png"
+        alt="Plieger logo"
+        class="w-44 h-12 lg:mb-0 mb-8 object-cover"
+      />
+      <p class="m-4">Over ons</p>
+      <p class="m-4">Activiteiten</p>
+      <p class="m-4">Onze mensen</p>
+      <p class="m-4">Contact</p>
+      <p class="m-4">Solliciteren</p>
+    </footer>
+  </div>
+</Layout>

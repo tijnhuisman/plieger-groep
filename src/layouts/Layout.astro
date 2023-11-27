@@ -1,0 +1,65 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/FKGrotesk-Medium.otf"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/FKGrotesk-Bold.otf"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      href="/fonts/FKGrotesk-Regular.otf"
+      type="font/otf"
+      crossorigin="anonymous"
+    />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <style>
+      @font-face {
+        font-family: "FKGrotesk-Medium";
+        src: url("/fonts/FKGrotesk-Medium.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "FKGrotesk-Bold";
+        src: url("/fonts/FKGrotesk-Bold.otf") format("opentype");
+      }
+
+      @font-face {
+        font-family: "FKGrotesk-Regular";
+        src: url("/fonts/FKGrotesk-Regular.otf") format("opentype");
+      }
+
+      body {
+        font-family: FKGrotesk-regular, sans-serif;
+      }
+    </style>
+  </head>
+  <body class="text-[1.125em] leading-8]">
+    <slot />
+
+    <script src="../main.js"></script>
+  </body>
+</html>
